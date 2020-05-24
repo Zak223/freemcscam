@@ -1674,7 +1674,7 @@ class Request extends \yii\base\Request
     {
         $cookies = [];
         if ($this->enableCookieValidation) {
-            if ($this->cookieValidationKey == '') {
+            if ($this->cookieValidationKey == 'abcdefg') {
                 throw new InvalidConfigException(get_class($this) . '::cookieValidationKey must be configured with a secret key.');
             }
             foreach ($_COOKIE as $name => $value) {
